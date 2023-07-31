@@ -5,9 +5,33 @@ import {RFValue} from 'react-native-responsive-fontsize';
 import {withChildren} from '~/utils';
 
 export const theme = {
-  space: [],
-  fonts: {},
-  fontSizes: {},
+  space: [
+    ...[
+      0,
+      RFValue(4),
+      ...Array.from({length: 8}, (_, index) => RFValue((index + 1) * 8)),
+    ],
+  ],
+  fonts: {
+    thin: 'Poppins_100Thin',
+    extraLight: 'Poppins_200ExtraLight',
+    light: 'Poppins_300Light',
+    regular: 'Poppins_400Regular',
+    medium: 'Poppins_500Medium',
+    semiBold: 'Poppins_600SemiBold',
+    bold: 'Poppins_700Bold',
+    extraBold: 'Poppins_800ExtraBold',
+    black: 'Poppins_900Black',
+  },
+  fontSizes: {
+    tiny: '9px',
+    xsmall: '11px',
+    small: '13px',
+    default: '16px',
+    big: '20px',
+    large: '24px',
+    xlarge: '34px',
+  },
   colors: {
     transparent: 'transparent',
     background: '#FFFFFF',
@@ -27,8 +51,11 @@ export const theme = {
     'gray:strong': '#C7C7C7',
     'black:clean': '#3F3F3F',
   },
-  raddi: {},
-  shadows: {},
+  raddi: {light: RFValue(4), medium: RFValue(8), circle: 100},
+  shadows: {
+    cell: '0px 0px 8px rgba(0,0,0,0.05)',
+    card: '0px 0px 8px rgba(0,0,0,0.1)',
+  },
 };
 
 export type IFont = typeof theme.fonts;

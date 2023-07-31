@@ -17,6 +17,7 @@
     "build:android": "npx expo build:android -t app-bundle"
   },
   "dependencies": {
+    "@expo-google-fonts/poppins": "^0.2.3",
     "@expo/vector-icons": "^13.0.0",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.7.3",
@@ -28,6 +29,7 @@
     "axios": "latest",
     "babel-plugin-module-resolver": "^4.1.0",
     "expo": "~46.0.9",
+    "expo-font": "~10.2.0",
     "expo-linear-gradient": "~11.4.0",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
