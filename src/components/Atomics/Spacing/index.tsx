@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Children} from 'react';
 
-import {Wrapped} from '~/components/Basics/Wrapped';
+import {Wrapped} from '~/components/Atomics/Wrapped';
 
 import ISpacing from './data';
 

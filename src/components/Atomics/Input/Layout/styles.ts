@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import {TextInput} from 'react-native';
-import {IInputLayout} from '~/components/Basics/Input/data';
+import {IInputLayout} from '~/components/Atomics/Input/data';
 import {color, space, border, boxShadow} from 'styled-system';
 
 export default {

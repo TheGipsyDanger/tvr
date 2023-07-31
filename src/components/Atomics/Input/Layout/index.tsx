@@ -1,7 +1,7 @@
 //@ts-nocheck
 import * as React from 'react';
 
-import {IInputLayout} from '~/components/Basics/Input/data';
+import {IInputLayout} from '~/components/Atomics/Input/data';
 
 import S from './styles';
 
