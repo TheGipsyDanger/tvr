@@ -43,9 +43,11 @@
     "react-native-web": "~0.18.7",
     "react-navigation": "^4.4.0",
     "react-redux": "^8.0.4",
+    "redux-saga": "^1.2.3",
     "remask": "^0.1.0-alpha.5",
     "styled-components": "latest",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "typesafe-actions": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
