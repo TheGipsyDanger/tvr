@@ -1,9 +1,13 @@
 import * as React from 'react';
 import {Provider} from 'react-redux';
 import {ThemeProvider} from '~/styles';
-import {NavigationContainer} from '@react-navigation/native';
-import store from './src/redux/store';
-import Routes from './src/routes/Routes';
+import {navigationRef} from '~/utils/navigator';
+import store from '~/redux/store';
+import Routes from '~/routes/Routes';
+import {
+  NavigationContainer,
+  NavigationContainerRef,
+} from '@react-navigation/native';
 
 import {
   useFonts,
@@ -36,7 +40,9 @@ const App: React.FC = () => {
   }
 
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      ref={navigationRef as React.Ref<NavigationContainerRef>}
+    >
       <ThemeProvider>
         <Provider store={store}>
           <Routes />
