@@ -1,3 +1,4 @@
+import '~/translate/i18n';
 import * as React from 'react';
 import {Provider} from 'react-redux';
 import {ThemeProvider} from '~/styles';
