@@ -1,2 +1,2 @@
-export * from './Home';
+export {default as MainNavigator} from './MainNavigator';
 // Import views here
