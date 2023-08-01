@@ -11,28 +11,21 @@ import {
 
 import {
   useFonts,
-  Poppins_100Thin,
-  Poppins_200ExtraLight,
-  Poppins_300Light,
-  Poppins_400Regular,
-  Poppins_500Medium,
-  Poppins_600SemiBold,
-  Poppins_700Bold,
-  Poppins_800ExtraBold,
-  Poppins_900Black,
-} from '@expo-google-fonts/poppins';
+  PTSans_400Regular,
+  PTSans_700Bold,
+} from '@expo-google-fonts/pt-sans';
+
+import {
+  PTSansCaption_400Regular,
+  PTSansCaption_700Bold,
+} from '@expo-google-fonts/pt-sans-caption';
 
 const App: React.FC = () => {
   let [fontsLoaded] = useFonts({
-    Poppins_100Thin,
-    Poppins_200ExtraLight,
-    Poppins_300Light,
-    Poppins_400Regular,
-    Poppins_500Medium,
-    Poppins_600SemiBold,
-    Poppins_700Bold,
-    Poppins_800ExtraBold,
-    Poppins_900Black,
+    PTSans_400Regular,
+    PTSansCaption_400Regular,
+    PTSans_700Bold,
+    PTSansCaption_700Bold,
   });
 
   if (!fontsLoaded) {

@@ -31,229 +31,116 @@ export default {
   Text: styled(Text)(
     variant({
       variants: {
-        header: {
-          fontFamily: theme.fonts.semiBold,
-          fontSize: theme.fontSizes.big,
-        },
-        formError: {
+        'h1:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.small,
-          color: theme.colors.red,
+          fontSize: theme.fontSizes.xlarge,
         },
-        'h1:thin': {
-          fontFamily: theme.fonts.thin,
-          fontSize: theme.fontSizes.large,
-        },
-        'h1:extraLight': {
-          fontFamily: theme.fonts.extraLight,
-          fontSize: theme.fontSizes.large,
-        },
-        'h1:light': {
-          fontFamily: theme.fonts.light,
-          fontSize: theme.fontSizes.large,
-        },
-        h1: {
-          fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.large,
-        },
-        'h1:medium': {
-          fontFamily: theme.fonts.medium,
-          fontSize: theme.fontSizes.large,
-        },
-        'h1:semiBold': {
-          fontFamily: theme.fonts.semiBold,
-          fontSize: theme.fontSizes.large,
+        'h1:regularCaption': {
+          fontFamily: theme.fonts.regularCaption,
+          fontSize: theme.fontSizes.xlarge,
         },
         'h1:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.large,
+          fontSize: theme.fontSizes.xlarge,
         },
-        'h1:extraBold': {
-          fontFamily: theme.fonts.extraBold,
-          fontSize: theme.fontSizes.large,
+        'h1:boldCaption': {
+          fontFamily: theme.fonts.boldCaption,
+          fontSize: theme.fontSizes.xlarge,
         },
-        'h1:black': {
-          fontFamily: theme.fonts.black,
-          fontSize: theme.fontSizes.large,
-        },
-        'h2:thin': {
-          fontFamily: theme.fonts.thin,
-          fontSize: theme.fontSizes.big,
-        },
-        'h2:extraLight': {
-          fontFamily: theme.fonts.extraLight,
-          fontSize: theme.fontSizes.big,
-        },
-        'h2:light': {
-          fontFamily: theme.fonts.light,
-          fontSize: theme.fontSizes.big,
-        },
-        h2: {
+        'h2:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.big,
+          fontSize: theme.fontSizes.large,
         },
-        'h2:medium': {
-          fontFamily: theme.fonts.medium,
-          fontSize: theme.fontSizes.big,
-        },
-        'h2:semiBold': {
-          fontFamily: theme.fonts.semiBold,
-          fontSize: theme.fontSizes.big,
+        'h2:regularCaption': {
+          fontFamily: theme.fonts.regularCaption,
+          fontSize: theme.fontSizes.large,
         },
         'h2:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.big,
+          fontSize: theme.fontSizes.large,
         },
-        'h2:extraBold': {
-          fontFamily: theme.fonts.extraBold,
-          fontSize: theme.fontSizes.big,
+        'h2:boldCaption': {
+          fontFamily: theme.fonts.boldCaption,
+          fontSize: theme.fontSizes.large,
         },
-        'h2:black': {
-          fontFamily: theme.fonts.black,
-          fontSize: theme.fontSizes.big,
-        },
-        'h3:thin': {
-          fontFamily: theme.fonts.thin,
-          fontSize: theme.fontSizes.default,
-        },
-        'h3:extraLight': {
-          fontFamily: theme.fonts.extraLight,
-          fontSize: theme.fontSizes.default,
-        },
-        'h3:light': {
-          fontFamily: theme.fonts.light,
-          fontSize: theme.fontSizes.default,
-        },
-        h3: {
+        'h3:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.default,
+          fontSize: theme.fontSizes.big,
         },
-        'h3:medium': {
-          fontFamily: theme.fonts.medium,
-          fontSize: theme.fontSizes.default,
-        },
-        'h3:semiBold': {
-          fontFamily: theme.fonts.semiBold,
-          fontSize: theme.fontSizes.default,
+        'h3:regularCaption': {
+          fontFamily: theme.fonts.regularCaption,
+          fontSize: theme.fontSizes.big,
         },
         'h3:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.default,
+          fontSize: theme.fontSizes.big,
         },
-        'h3:extraBold': {
-          fontFamily: theme.fonts.extraBold,
-          fontSize: theme.fontSizes.default,
+        'h3:boldCaption': {
+          fontFamily: theme.fonts.boldCaption,
+          fontSize: theme.fontSizes.big,
         },
-        'h3:black': {
-          fontFamily: theme.fonts.black,
-          fontSize: theme.fontSizes.default,
-        },
-        'h4:thin': {
-          fontFamily: theme.fonts.thin,
-          fontSize: theme.fontSizes.small,
-        },
-        'h4:extraLight': {
-          fontFamily: theme.fonts.extraLight,
-          fontSize: theme.fontSizes.small,
-        },
-        'h4:light': {
-          fontFamily: theme.fonts.light,
-          fontSize: theme.fontSizes.small,
-        },
-        h4: {
+        'h4:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.small,
+          fontSize: theme.fontSizes.default,
         },
-        'h4:medium': {
-          fontFamily: theme.fonts.medium,
-          fontSize: theme.fontSizes.small,
-        },
-        'h4:semiBold': {
-          fontFamily: theme.fonts.semiBold,
-          fontSize: theme.fontSizes.small,
+        'h4:regularCaption': {
+          fontFamily: theme.fonts.regularCaption,
+          fontSize: theme.fontSizes.default,
         },
         'h4:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.small,
+          fontSize: theme.fontSizes.default,
         },
-        'h4:extraBold': {
-          fontFamily: theme.fonts.extraBold,
-          fontSize: theme.fontSizes.small,
+        'h4:boldCaption': {
+          fontFamily: theme.fonts.boldCaption,
+          fontSize: theme.fontSizes.default,
         },
-        'h4:black': {
-          fontFamily: theme.fonts.black,
-          fontSize: theme.fontSizes.small,
-        },
-        'h5:thin': {
-          fontFamily: theme.fonts.thin,
-          fontSize: theme.fontSizes.xsmall,
-        },
-        'h5:extraLight': {
-          fontFamily: theme.fonts.extraLight,
-          fontSize: theme.fontSizes.xsmall,
-        },
-        'h5:light': {
-          fontFamily: theme.fonts.light,
-          fontSize: theme.fontSizes.xsmall,
-        },
-        h5: {
+        'h5:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.xsmall,
+          fontSize: theme.fontSizes.small,
         },
-        'h5:medium': {
-          fontFamily: theme.fonts.medium,
-          fontSize: theme.fontSizes.xsmall,
-        },
-        'h5:semiBold': {
-          fontFamily: theme.fonts.semiBold,
-          fontSize: theme.fontSizes.xsmall,
+        'h5:regularCaption': {
+          fontFamily: theme.fonts.regularCaption,
+          fontSize: theme.fontSizes.small,
         },
         'h5:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.xsmall,
+          fontSize: theme.fontSizes.small,
         },
-        'h5:extraBold': {
-          fontFamily: theme.fonts.extraBold,
-          fontSize: theme.fontSizes.xsmall,
+        'h5:boldCaption': {
+          fontFamily: theme.fonts.boldCaption,
+          fontSize: theme.fontSizes.small,
         },
-        'h5:black': {
-          fontFamily: theme.fonts.black,
-          fontSize: theme.fontSizes.xsmall,
-        },
-        'h6:thin': {
-          fontFamily: theme.fonts.thin,
-          fontSize: theme.fontSizes.tiny,
-        },
-        'h6:extraLight': {
-          fontFamily: theme.fonts.extraLight,
-          fontSize: theme.fontSizes.tiny,
-        },
-        'h6:light': {
-          fontFamily: theme.fonts.light,
-          fontSize: theme.fontSizes.tiny,
-        },
-        h6: {
+        'h6:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.tiny,
+          fontSize: theme.fontSizes.xsmall,
         },
-        'h6:medium': {
-          fontFamily: theme.fonts.medium,
-          fontSize: theme.fontSizes.tiny,
-        },
-        'h6:semiBold': {
-          fontFamily: theme.fonts.semiBold,
-          fontSize: theme.fontSizes.tiny,
+        'h6:regularCaption': {
+          fontFamily: theme.fonts.regularCaption,
+          fontSize: theme.fontSizes.xsmall,
         },
         'h6:bold': {
           fontFamily: theme.fonts.bold,
+          fontSize: theme.fontSizes.xsmall,
+        },
+        'h6:boldCaption': {
+          fontFamily: theme.fonts.boldCaption,
+          fontSize: theme.fontSizes.xsmall,
+        },
+        regular: {
+          fontFamily: theme.fonts.regular,
           fontSize: theme.fontSizes.tiny,
         },
-        'h6:extraBold': {
-          fontFamily: theme.fonts.extraBold,
+        regularCaption: {
+          fontFamily: theme.fonts.regularCaption,
           fontSize: theme.fontSizes.tiny,
         },
-        'h6:black': {
-          fontFamily: theme.fonts.black,
+        bold: {
+          fontFamily: theme.fonts.bold,
+          fontSize: theme.fontSizes.tiny,
+        },
+        boldCaption: {
+          fontFamily: theme.fonts.boldCaption,
           fontSize: theme.fontSizes.tiny,
         },
       },
