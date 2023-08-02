@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {ImageBackground} from 'react-native';
+import {ImageBackground, StatusBar} from 'react-native';
+import {Screen} from '~/components/Atomics';
 import {IAppBackground} from '~/components/AppBackground/AppBackground.types';
 import bg from '~/../assets/bg.png';
 import splash from '~/../assets/splash.png';
@@ -13,6 +14,7 @@ export const AppBackground = ({
     source={hasBg ? bg : splash}
     style={{flex: 1}}
   >
-    {children}
+    <StatusBar barStyle="light-content" />
+    <Screen bg="transparent">{children}</Screen>
   </ImageBackground>
 );
