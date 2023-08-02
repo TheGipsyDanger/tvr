@@ -1,4 +1,4 @@
-import {RootParamList} from './routes';
+import {RootParamList} from '~/routes/routeConfig';
 
 declare module '@react-navigation/native' {
   export type NavigationProp<

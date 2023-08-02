@@ -15,7 +15,7 @@ import {
   ResponsiveValue,
 } from 'styled-system';
 
-import {INavigate, IRoute} from '~/types/routes';
+import {INavigate, IRoute} from '~/routes/routeConfig';
 
 import {IFont, IFontSizes, IColors, IRadius} from '~/styles/theme';
 

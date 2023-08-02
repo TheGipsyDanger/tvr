@@ -51,6 +51,7 @@ export const theme = {
     light: RFValue(4),
     medium: RFValue(8),
     button: RFValue(12),
+    bgSquare: RFValue(50),
     circle: 100,
   },
   shadows: {

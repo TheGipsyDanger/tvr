@@ -1,5 +1,17 @@
-import { IMain } from '~/pages/Main/Main/Main.types'
+import {IMain} from '~/pages/MainNavigator/Main/Main.types';
+import {AppRoutes} from '~/routes/routeConfig';
 
-export const useMain = (props: IMain.IModelProps ): IMain.IModel => {
-  return {}
-}
+export const useMain = ({navigation}: IMain.IModelProps): IMain.IModel => {
+  const goToMyCards = () => {
+    navigation.navigate(AppRoutes.Initial);
+  };
+
+  const goToAddCardForm = () => {
+    navigation.navigate(AppRoutes.CreateCard);
+  };
+
+  return {
+    goToMyCards,
+    goToAddCardForm,
+  };
+};

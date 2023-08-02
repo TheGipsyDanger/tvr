@@ -1,12 +1,11 @@
 import '~/translate/i18n';
 import * as React from 'react';
-import {useCallback, useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import {NavigationWrapped, AppBackground} from '~/components';
 import {Provider} from 'react-redux';
 import {ThemeProvider} from '~/styles';
 import store from '~/redux/store';
 import Routes from '~/routes/Routes';
-import * as SplashScreen from 'expo-splash-screen';
 
 import {
   useFonts,
@@ -19,10 +18,12 @@ import {
   PTSansCaption_700Bold,
 } from '@expo-google-fonts/pt-sans-caption';
 
-SplashScreen.preventAutoHideAsync();
+import {useAssets} from 'expo-asset';
 
 const App: React.FC = () => {
   const [appIsReady, setAppIsReady] = useState(false);
+
+  const [assets] = useAssets([require('./assets/splash.png')]);
 
   let [fontsLoaded] = useFonts({
     PTSans_400Regular,
@@ -31,30 +32,22 @@ const App: React.FC = () => {
     PTSansCaption_700Bold,
   });
 
-  const onLayoutRootView = useCallback(async () => {
-    if (appIsReady) {
-      await SplashScreen.hideAsync();
-    }
-  }, [appIsReady]);
-
   useEffect(() => {
-    fontsLoaded && setAppIsReady(true);
-  }, [fontsLoaded]);
+    fontsLoaded && assets && setAppIsReady(true);
+  }, [fontsLoaded, assets]);
 
   if (!appIsReady) {
-    return null;
+    return <AppBackground hasBg={false} />;
   }
 
   return (
-    <AppBackground onLayoutRootView={onLayoutRootView}>
-      <NavigationWrapped>
-        <ThemeProvider>
-          <Provider store={store}>
-            <Routes />
-          </Provider>
-        </ThemeProvider>
-      </NavigationWrapped>
-    </AppBackground>
+    <NavigationWrapped>
+      <ThemeProvider>
+        <Provider store={store}>
+          <Routes />
+        </Provider>
+      </ThemeProvider>
+    </NavigationWrapped>
   );
 };
 
