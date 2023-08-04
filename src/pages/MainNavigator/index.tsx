@@ -8,7 +8,7 @@ const MainStack = createStackNavigator();
 
 export default function MainRoutes() {
   return (
-    <MainStack.Navigator initialRouteName={inTest ? 'Test' : 'Main'}>
+    <MainStack.Navigator initialRouteName={inTest ? 'Test' : 'Initial'}>
       {routes.map(view => (
         <MainStack.Screen {...view} />
       ))}

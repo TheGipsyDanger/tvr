@@ -1,37 +1,23 @@
 import * as React from 'react';
-import {Div, Spacing, Text} from '~/components/Atomics';
-import {Button, AppBackground} from '~/components';
+import {AppBackground, Header, HeaderIcon} from '~/components';
 import {IMain} from '~/pages/MainNavigator/Main/Main.types';
 import {useMain} from '~/pages/MainNavigator/Main/Main.model';
 
 export const Main = (props: IMain.IView) => {
-  const {goToMyCards, goToAddCardForm} = useMain(props);
+  const {goBack, goToAddCardForm} = useMain(props);
   return (
-    <AppBackground>
-      <Div flex={1} justifyContent="center" testID={`Main`}>
-        <Div mx={5}>
-          <Text
-            variant="h1:regularCaption"
-            color="white"
-            textAlign="center"
-            mb={5}
-          >
-            Wallet Test
-          </Text>
-          <Spacing space={3}>
-            <Button
-              variant="primary"
-              keyLabel="MyCards"
-              onPress={goToMyCards}
-            />
-            <Button
-              variant="success"
-              keyLabel="AddCard"
-              onPress={goToAddCardForm}
-            />
-          </Spacing>
-        </Div>
-      </Div>
+    <AppBackground statusBarType="dark-content">
+      <Header.Root variant="default">
+        <Header.Action
+          onPress={goBack}
+          icon={<HeaderIcon variant="arrow-back-sharp" />}
+        />
+        <Header.Content text="Wallet Test" variant="default" />
+        <Header.Action
+          onPress={goToAddCardForm}
+          icon={<HeaderIcon variant="add" />}
+        />
+      </Header.Root>
     </AppBackground>
   );
 };
