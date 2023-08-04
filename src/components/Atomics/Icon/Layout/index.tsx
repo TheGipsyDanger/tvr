@@ -21,7 +21,7 @@ export const Icon: React.FC<IIconLayout> = ({
 }) => {
   return (
     <Wrapped {...props} testID={'Icon'}>
-      <Main lib={lib} size={size} color={color} name={name} />
+      <Main lib={lib} size={size} color={theme.colors[color]} name={name} />
     </Wrapped>
   );
 };

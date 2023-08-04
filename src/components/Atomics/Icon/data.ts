@@ -1,9 +1,9 @@
-import {IColors} from '~/styles';
+import {IColors} from '~/styles/theme';
 export interface IIcon {
   data?: any;
   lib?: string;
   size?: number;
-  color: IColors;
+  color: keyof IColors;
   name: string;
   onPress?(): void;
 }
