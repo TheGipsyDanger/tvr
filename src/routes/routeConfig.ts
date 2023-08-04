@@ -1,9 +1,9 @@
 import {NavigationProp, RouteProp} from '@react-navigation/native';
 
 export enum AppRoutes {
-  Main = 'MainNavigator',
+  Main = 'Main',
   CreateCard = 'CreateCard',
-  Initial = 'Initial',
+  Initial = 'MainNavigator',
 }
 
 export type RootParamList = {
