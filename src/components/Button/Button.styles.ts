@@ -14,7 +14,7 @@ export default {
           backgroundColor: theme.colors['green:light'],
         },
         disable: {
-          backgroundColor: theme.colors['gray:light'],
+          backgroundColor: theme.colors['grey:light'],
         },
         link: {
           backgroundColor: theme.colors['transparent'],
@@ -36,7 +36,7 @@ export default {
           fontSize: theme.fontSizes['h5'],
         },
         disable: {
-          color: theme.colors['gray'],
+          color: theme.colors['grey'],
           fontFamily: theme.fonts['regular'],
           fontSize: theme.fontSizes['h5'],
         },

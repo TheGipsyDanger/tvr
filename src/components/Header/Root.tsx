@@ -13,7 +13,7 @@ export const Root = ({children, variant}: IHeader.IRoot) => {
     <Div
       key="compensation"
       height={top}
-      bg={variant === 'clean' ? 'transparent' : 'gray:light'}
+      bg={variant === 'clean' ? 'transparent' : 'grey:light'}
     />,
     <S.Container variant={variant} key="component">
       <Div flex={1}>{first}</Div>

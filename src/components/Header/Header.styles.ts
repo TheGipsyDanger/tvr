@@ -17,7 +17,7 @@ export default {
     variant({
       variants: {
         default: {
-          backgroundColor: 'gray:light',
+          backgroundColor: 'grey:light',
         },
         clean: {
           backgroundColor: 'transparent',
