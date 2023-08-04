@@ -45,6 +45,7 @@ export const theme = {
     'blue:strong': '#142A96',
     'gray:strong': '#010101',
     'gray:clean': '#C7C7C7',
+    'gray:light': '#EEEEEE',
     'black:clean': '#3F3F3F',
   },
   raddi: {
