@@ -47,16 +47,14 @@ export type ITextVariants =
   | 'h5:regularCaption'
   | 'h5:bold'
   | 'h5:boldCaption'
-  | 'h6:regular'
-  | 'h6:regularCaption'
-  | 'h6:bold'
-  | 'h6:boldCaption'
-  | 'regular'
-  | 'regularCaption'
-  | 'bold'
-  | 'boldCaption';
-
-export type IEditSettingsTypes = 'theme' | 'language';
+  | 'p:paragraph:regular'
+  | 'p:paragraph:regularCaption'
+  | 'p:paragraph:bold'
+  | 'p:paragraph:boldCaption'
+  | 'p:small:regular'
+  | 'p:small:regularCaption'
+  | 'p:small:bold'
+  | 'p:small:boldCaption';
 
 export interface IPageWithNavigation {
   navigation: INavigate;

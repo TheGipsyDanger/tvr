@@ -33,115 +33,115 @@ export default {
       variants: {
         'h1:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.xlarge,
+          fontSize: theme.fontSizes.h1,
         },
         'h1:regularCaption': {
           fontFamily: theme.fonts.regularCaption,
-          fontSize: theme.fontSizes.xlarge,
+          fontSize: theme.fontSizes.h1,
         },
         'h1:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.xlarge,
+          fontSize: theme.fontSizes.h1,
         },
         'h1:boldCaption': {
           fontFamily: theme.fonts.boldCaption,
-          fontSize: theme.fontSizes.xlarge,
+          fontSize: theme.fontSizes.h1,
         },
         'h2:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.large,
+          fontSize: theme.fontSizes.h2,
         },
         'h2:regularCaption': {
           fontFamily: theme.fonts.regularCaption,
-          fontSize: theme.fontSizes.large,
+          fontSize: theme.fontSizes.h2,
         },
         'h2:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.large,
+          fontSize: theme.fontSizes.h2,
         },
         'h2:boldCaption': {
           fontFamily: theme.fonts.boldCaption,
-          fontSize: theme.fontSizes.large,
+          fontSize: theme.fontSizes.h2,
         },
         'h3:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.big,
+          fontSize: theme.fontSizes.h3,
         },
         'h3:regularCaption': {
           fontFamily: theme.fonts.regularCaption,
-          fontSize: theme.fontSizes.big,
+          fontSize: theme.fontSizes.h3,
         },
         'h3:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.big,
+          fontSize: theme.fontSizes.h3,
         },
         'h3:boldCaption': {
           fontFamily: theme.fonts.boldCaption,
-          fontSize: theme.fontSizes.big,
+          fontSize: theme.fontSizes.h3,
         },
         'h4:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.default,
+          fontSize: theme.fontSizes.h4,
         },
         'h4:regularCaption': {
           fontFamily: theme.fonts.regularCaption,
-          fontSize: theme.fontSizes.default,
+          fontSize: theme.fontSizes.h4,
         },
         'h4:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.default,
+          fontSize: theme.fontSizes.h4,
         },
         'h4:boldCaption': {
           fontFamily: theme.fonts.boldCaption,
-          fontSize: theme.fontSizes.default,
+          fontSize: theme.fontSizes.h4,
         },
         'h5:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.small,
+          fontSize: theme.fontSizes.h5,
         },
         'h5:regularCaption': {
           fontFamily: theme.fonts.regularCaption,
-          fontSize: theme.fontSizes.small,
+          fontSize: theme.fontSizes.h5,
         },
         'h5:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.small,
+          fontSize: theme.fontSizes.h5,
         },
         'h5:boldCaption': {
           fontFamily: theme.fonts.boldCaption,
-          fontSize: theme.fontSizes.small,
+          fontSize: theme.fontSizes.h5,
         },
-        'h6:regular': {
+        'p:paragraph:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.xsmall,
+          fontSize: theme.fontSizes['p:paragraph'],
         },
-        'h6:regularCaption': {
+        'p:paragraph:regularCaption': {
           fontFamily: theme.fonts.regularCaption,
-          fontSize: theme.fontSizes.xsmall,
+          fontSize: theme.fontSizes['p:paragraph'],
         },
-        'h6:bold': {
+        'p:paragraph:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.xsmall,
+          fontSize: theme.fontSizes['p:paragraph'],
         },
-        'h6:boldCaption': {
+        'p:paragraph:boldCaption': {
           fontFamily: theme.fonts.boldCaption,
-          fontSize: theme.fontSizes.xsmall,
+          fontSize: theme.fontSizes['p:paragraph'],
         },
-        regular: {
+        'p:small:regular': {
           fontFamily: theme.fonts.regular,
-          fontSize: theme.fontSizes.tiny,
+          fontSize: theme.fontSizes['p:small'],
         },
-        regularCaption: {
+        'p:small:regularCaption': {
           fontFamily: theme.fonts.regularCaption,
-          fontSize: theme.fontSizes.tiny,
+          fontSize: theme.fontSizes['p:small'],
         },
-        bold: {
+        'p:small:bold': {
           fontFamily: theme.fonts.bold,
-          fontSize: theme.fontSizes.tiny,
+          fontSize: theme.fontSizes['p:small'],
         },
-        boldCaption: {
+        'p:small:boldCaption': {
           fontFamily: theme.fonts.boldCaption,
-          fontSize: theme.fontSizes.tiny,
+          fontSize: theme.fontSizes['p:small'],
         },
       },
     })
