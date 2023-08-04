@@ -29,14 +29,14 @@ export default {
     variant({
       variants: {
         default: {
-          fontSize: theme.fontSizes.large,
+          fontSize: theme.fontSizes.h3,
           fontFamily: theme.fonts.regularCaption,
-          color: theme.colors['blue:strong'],
+          color: theme.colors['blue:dark'],
         },
         clean: {
-          fontSize: theme.fontSizes.large,
+          fontSize: theme.fontSizes.h3,
           fontFamily: theme.fonts.regularCaption,
-          color: theme.colors['blue:clean'],
+          color: theme.colors['blue:light'],
         },
       },
     })

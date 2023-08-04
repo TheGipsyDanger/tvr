@@ -7,6 +7,6 @@ export default {
     name: variant,
     lib: 'Ionicons',
     size: 30,
-    color: 'blue:clean',
+    color: 'blue:light',
   }))``,
 };

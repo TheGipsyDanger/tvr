@@ -8,13 +8,13 @@ export default {
     variant({
       variants: {
         primary: {
-          backgroundColor: theme.colors['blue:clean'],
+          backgroundColor: theme.colors['blue:light'],
         },
         success: {
-          backgroundColor: theme.colors['green'],
+          backgroundColor: theme.colors['green:light'],
         },
         disable: {
-          backgroundColor: theme.colors['gray:clean'],
+          backgroundColor: theme.colors['gray:light'],
         },
         link: {
           backgroundColor: theme.colors['transparent'],
@@ -28,22 +28,22 @@ export default {
         primary: {
           color: theme.colors['white'],
           fontFamily: theme.fonts['regular'],
-          fontSize: theme.fontSizes['default'],
+          fontSize: theme.fontSizes['h5'],
         },
         success: {
-          color: theme.colors['blue:strong'],
+          color: theme.colors['blue:dark'],
           fontFamily: theme.fonts['regular'],
-          fontSize: theme.fontSizes['default'],
+          fontSize: theme.fontSizes['h5'],
         },
         disable: {
           color: theme.colors['gray'],
           fontFamily: theme.fonts['regular'],
-          fontSize: theme.fontSizes['default'],
+          fontSize: theme.fontSizes['h5'],
         },
         link: {
           color: theme.colors['white'],
           fontFamily: theme.fonts['regular'],
-          fontSize: theme.fontSizes['default'],
+          fontSize: theme.fontSizes['h5'],
         },
       },
     })
