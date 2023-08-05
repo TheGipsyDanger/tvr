@@ -1,4 +1,5 @@
-import {withChildren, IFont, IFontSize} from '~/utils';
+import {withChildren} from '~/utils';
+import {IFont, IFontSizes} from '~/styles/theme';
 import {TextInput} from 'react-native';
 
 import {
@@ -26,7 +27,7 @@ export interface IInput
     TypographyProps {
   testID?: string;
   font?: IFont;
-  size?: IFontSize;
+  size?: IFontSizes;
   forwardRef: React.MutableRefObject<TextInput | undefined>;
   onChange: any;
   handleValue: any;
