@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Div, Text, Input} from '~/components/Atomics';
 import {IFormInput} from '~/components/FormInput/FormInput.types';
+import {defineMask} from '~/utils';
 
 export const FormInput = ({
   label = 'input',
@@ -27,6 +28,7 @@ export const FormInput = ({
         placeholder={placeholder}
         value={value}
         onBlur={onBlur}
+        mask={defineMask(name)}
         onChangeText={(text: string) => {
           onChange(text);
           trigger(name);
