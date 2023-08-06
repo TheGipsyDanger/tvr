@@ -53,6 +53,7 @@ export const theme = {
     light: RFValue(4),
     medium: RFValue(8),
     button: RFValue(12),
+    card: RFValue(16),
     input: RFValue(6),
     bgSquare: RFValue(50),
     circle: 100,
@@ -60,7 +61,7 @@ export const theme = {
   shadows: {
     input: '0px 0px 8px rgba(0, 0, 0, 0.15)',
     cell: '0px 0px 8px rgba(0,0,0,0.05)',
-    card: '0px 0px 8px rgba(0,0,0,0.1)',
+    card: '0px 0px 8px rgba(0,0,0,0.25)',
   },
 };
 

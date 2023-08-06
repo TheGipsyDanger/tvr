@@ -5,4 +5,5 @@ export * from './AppBackground';
 export * from './Header';
 export * from './HeaderIcon';
 export * from './FormInput';
+export * from './Card';
 // Import component here

@@ -25,7 +25,7 @@ export class CreateCard implements ICreateCard {
         id: uuid.v4(),
         name,
         cvv,
-        number: useMask(cardNumber, defineMask('cardNumber')),
+        cardNumber: useMask(cardNumber, defineMask('cardNumber')),
         validity: useMask(validity, defineMask('validity')),
       },
     });

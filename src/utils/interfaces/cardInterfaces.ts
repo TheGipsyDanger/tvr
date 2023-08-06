@@ -1,6 +1,6 @@
 export interface ICard {
   id: string;
-  number: string;
+  cardNumber: string;
   cvv: string;
   name: string;
   validity: string;
