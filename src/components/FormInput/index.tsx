@@ -1,29 +1,22 @@
 import * as React from 'react';
-import {Div, Text, Input} from '~/components/Atomics';
+import {Div, Input} from '~/components/Atomics';
 import {IFormInput} from '~/components/FormInput/FormInput.types';
-import {defineMask} from '~/utils';
+import {defineLabel, defineMask} from '~/utils';
+import S from '~/components/FormInput/FormInput.styles';
 
 export const FormInput = ({
-  label = 'input',
   placeholder,
   onChange,
   value,
   onBlur,
   trigger,
   name,
+  errors,
+  ...rest
 }: IFormInput.IView) => (
-  <Div testID={`FormInput`}>
-    <Text variant="p:small:regular" color="grey" mb={2}>
-      {label}
-    </Text>
-    <Div
-      height={55}
-      px={3}
-      justifyContent="center"
-      bg="white"
-      radius="input"
-      boxShadow="input"
-    >
+  <Div {...rest} mb={3} testID={`FormInput`}>
+    <S.Label color="white">{defineLabel(name)}</S.Label>
+    <S.Content borderColor={errors?.[name]?.message ? 'red' : 'transparent'}>
       <Input
         placeholder={placeholder}
         value={value}
@@ -34,6 +27,15 @@ export const FormInput = ({
           trigger(name);
         }}
       />
-    </Div>
+    </S.Content>
+    {errors?.[name]?.message && (
+      <S.Label mt={1} color="red">
+        {
+          <S.Label mt={1} color="red">
+            {errors?.[name]?.message}
+          </S.Label>
+        }
+      </S.Label>
+    )}
   </Div>
 );
