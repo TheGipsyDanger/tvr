@@ -6,4 +6,5 @@ export * from './Header';
 export * from './HeaderIcon';
 export * from './FormInput';
 export * from './Card';
+export * from './Title';
 // Import component here

@@ -2,6 +2,7 @@ import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {pages} from '~/translate/pages';
 import {buttons} from '~/translate/buttons';
+import {titles} from '~/translate/title';
 import {form} from '~/translate/form';
 
 i18n.use(initReactI18next).init(
@@ -14,6 +15,7 @@ i18n.use(initReactI18next).init(
           pages,
           components: {
             Button: buttons,
+            Title: titles,
           },
           form,
         },

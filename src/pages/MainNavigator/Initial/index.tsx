@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Div, Spacing, Text} from '~/components/Atomics';
-import {AppBackground, Button} from '~/components';
+import {AppBackground, Button, Title} from '~/components';
 import {IInitial} from '~/pages/MainNavigator/Initial/Initial.types';
 import {useInitial} from '~/pages/MainNavigator/Initial/Initial.model';
 
@@ -11,14 +11,7 @@ export const Initial = (props: IInitial.IView) => {
     <AppBackground>
       <Div flex={1} justifyContent="center" testID={`Main`}>
         <Div mx={5}>
-          <Text
-            variant="h1:regularCaption"
-            color="white"
-            textAlign="center"
-            mb={5}
-          >
-            Wallet Test
-          </Text>
+          <Title />
           <Spacing space={3}>
             <Button
               isLoading={isLoading}
