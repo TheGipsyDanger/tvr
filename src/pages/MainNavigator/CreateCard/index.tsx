@@ -7,6 +7,7 @@ import {
   HeaderIcon,
   FormInput,
   Button,
+  Title,
 } from '~/components';
 import {useCreateCard} from '~/pages/MainNavigator/CreateCard/CreateCard.model';
 
@@ -24,6 +25,7 @@ export const CreateCard = () => {
       </Header.Root>
       <Screen bg="transparent" pb={9}>
         <Div flex={1} justifyContent="center" pb={9}>
+          <Title />
           <Div mx={3}>
             <Controller
               control={control}
