@@ -1,5 +1,1 @@
-// Import redux here
-
-export const reducers = {
-  // use redux here
-};
+export {default as Cards} from './Cards';

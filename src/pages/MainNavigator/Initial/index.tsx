@@ -5,7 +5,7 @@ import {IInitial} from '~/pages/MainNavigator/Initial/Initial.types';
 import {useInitial} from '~/pages/MainNavigator/Initial/Initial.model';
 
 export const Initial = (props: IInitial.IView) => {
-  const {goToMyCards, goToAddCardForm} = useInitial(props);
+  const {cards, isLoading, goToMyCards, goToAddCardForm} = useInitial(props);
   return (
     <AppBackground>
       <Div flex={1} justifyContent="center" testID={`Main`}>
@@ -20,11 +20,13 @@ export const Initial = (props: IInitial.IView) => {
           </Text>
           <Spacing space={3}>
             <Button
+              isLoading={isLoading}
               variant="primary"
               keyLabel="MyCards"
               onPress={goToMyCards}
             />
             <Button
+              isLoading={isLoading}
               variant="success"
               keyLabel="AddCard"
               onPress={goToAddCardForm}
