@@ -13,6 +13,8 @@ export class GetCards implements IGetCards {
 
     switch (httpResponse.statusCode) {
       case HttpStatusCode.ok:
+      case HttpStatusCode.success:
+      case HttpStatusCode.memoOk:
         return {
           status: 'Success',
           message: '',

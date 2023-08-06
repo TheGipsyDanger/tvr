@@ -6,6 +6,7 @@ import {useInitial} from '~/pages/MainNavigator/Initial/Initial.model';
 
 export const Initial = (props: IInitial.IView) => {
   const {cards, isLoading, goToMyCards, goToAddCardForm} = useInitial(props);
+
   return (
     <AppBackground>
       <Div flex={1} justifyContent="center" testID={`Main`}>

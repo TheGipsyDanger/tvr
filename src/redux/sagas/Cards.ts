@@ -1,7 +1,9 @@
 import {all, put, takeLatest, delay} from 'redux-saga/effects';
-import {IGetCardsRequest} from '~/data/models';
-import {getCardsActions} from '~/redux/actions';
-import {callGetCards} from '~/data/factories';
+import {IGetCardsRequest, ICreateCardRequest} from '~/data/models';
+import {getCardsActions, createCardActions} from '~/redux/actions';
+import {callGetCards, callCreateCard} from '~/data/factories';
+import {AppRoutes} from '~/routes/routeConfig';
+import {navigate} from '~/utils';
 
 function* getCards(params: ReturnType<typeof getCardsActions.request>) {
   try {
@@ -17,8 +19,24 @@ function* getCards(params: ReturnType<typeof getCardsActions.request>) {
   }
 }
 
+function* createCard({payload}: ReturnType<typeof createCardActions.request>) {
+  try {
+    const resp: ICreateCardRequest = yield callCreateCard(payload);
+
+    if (resp.status === 'Success') {
+      yield put(createCardActions.success(resp.data));
+      navigate(AppRoutes.Main);
+    } else {
+      yield put(createCardActions.failure(`${resp?.message}`));
+    }
+  } catch (error) {
+    yield put(createCardActions.failure(`${error}`));
+  }
+}
+
 function* watchRoomRequests() {
   yield takeLatest(getCardsActions.request, getCards);
+  yield takeLatest(createCardActions.request, createCard);
 }
 
 export default function* root(): Generator {

@@ -1,9 +1,11 @@
 import {useForm} from 'react-hook-form';
 import {ICreateCard} from '~/pages/MainNavigator/CreateCard/CreateCard.types';
 import {yupResolver} from '@hookform/resolvers/yup';
-import {IAddForm, goBack, addCardFormSchema} from '~/utils';
+import {IAddForm, goBack, addCardFormSchema, useAppDispatch} from '~/utils';
+import {createCardActions} from '~/redux/actions';
 
 export const useCreateCard = (): ICreateCard.IModel => {
+  const dispatch = useAppDispatch();
   const {
     control,
     trigger,
@@ -14,7 +16,7 @@ export const useCreateCard = (): ICreateCard.IModel => {
   });
 
   const onSubmit = (params: IAddForm<string>) => {
-    console.log(`🚀 ~ onSubmit ~ params:`, params);
+    dispatch(createCardActions.request(params));
   };
 
   return {

@@ -1,5 +1,5 @@
 import {ICard} from '~/utils';
-import {IGetCards} from '~/data/dataInterfaces';
+import {IGetCards, ICreateCard} from '~/data/dataInterfaces';
 import {createAsyncAction} from 'typesafe-actions';
 
 export const getCardsActions = createAsyncAction(
@@ -7,3 +7,9 @@ export const getCardsActions = createAsyncAction(
   'Cards/cardsRequestSuccess',
   'Cards/cardsRequestFailure'
 )<IGetCards.Params, ICard[], string>();
+
+export const createCardActions = createAsyncAction(
+  'Cards/createCardRequest',
+  'Cards/createCardRequestSuccess',
+  'Cards/createCardRequestFailure'
+)<ICreateCard.Params, ICard, string>();

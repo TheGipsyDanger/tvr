@@ -13,7 +13,9 @@ export type HttpMethod = 'post' | 'get' | 'put' | 'delete';
 
 export enum HttpStatusCode {
   ok = 200,
+  success = 201,
   noContent = 204,
+  memoOk = 304,
   badRequest = 400,
   unauthorized = 401,
   forbidden = 403,
