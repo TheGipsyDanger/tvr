@@ -14,7 +14,8 @@
     "clean": "prettier --write ./src",
     "staged:clean": "pretty-quick --staged",
     "build:ios": "npx expo build:ios -t archive",
-    "build:android": "npx expo build:android -t app-bundle"
+    "build:android": "npx expo build:android -t app-bundle",
+    "run:db": "json-server --watch db.json"
   },
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.3",
@@ -66,6 +67,7 @@
     "fbjs-scripts": "^3.0.1",
     "husky": "^8.0.1",
     "jest-expo": "^42.0.0",
+    "json-server": "^0.17.3",
     "plop": "latest",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
