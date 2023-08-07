@@ -1,6 +1,6 @@
 export const pages = {
   Main: {
-    Title: 'Inicio',
+    title: 'Inicio',
   },
   Initial: {
     title: 'Inicial',

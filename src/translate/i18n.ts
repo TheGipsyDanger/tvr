@@ -3,6 +3,7 @@ import {initReactI18next} from 'react-i18next';
 import {pages} from '~/translate/pages';
 import {buttons} from '~/translate/buttons';
 import {titles} from '~/translate/title';
+import {headers} from '~/translate/header';
 import {form} from '~/translate/form';
 
 i18n.use(initReactI18next).init(
@@ -16,6 +17,7 @@ i18n.use(initReactI18next).init(
           components: {
             Button: buttons,
             Title: titles,
+            Header: headers,
           },
           form,
         },

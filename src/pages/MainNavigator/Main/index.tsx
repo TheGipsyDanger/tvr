@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {FlatList} from 'react-native';
-import {AppBackground, Header, HeaderIcon, Card, Div} from '~/components';
+import {AppBackground, Header, HeaderIcon, Subheader, Div} from '~/components';
 import {IMain} from '~/pages/MainNavigator/Main/Main.types';
 import {useMain} from '~/pages/MainNavigator/Main/Main.model';
 
@@ -20,7 +20,8 @@ export const Main = (props: IMain.IView) => {
           icon={<HeaderIcon variant="add" />}
         />
       </Header.Root>
-      <Div mx={5}>
+      <Subheader />
+      <Div mx={5} flex={1}>
         <FlatList
           data={cards}
           extraData={cards}

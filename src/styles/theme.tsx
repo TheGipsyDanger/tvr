@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {ThemeProvider as StyledThemeProvider} from 'styled-components';
-
 import {RFValue} from 'react-native-responsive-fontsize';
 import {withChildren} from '~/utils';
 
@@ -61,7 +60,7 @@ export const theme = {
   shadows: {
     input: '0px 0px 8px rgba(0, 0, 0, 0.15)',
     cell: '0px 0px 8px rgba(0,0,0,0.05)',
-    card: '0px 0px 8px rgba(0,0,0,0.25)',
+    card: '8px 8px 10px rgba(0,0,0, 0.25)',
   },
 };
 
