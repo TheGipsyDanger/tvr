@@ -10,6 +10,7 @@ export const AppBackground = ({
   hasBg = true,
 }: IAppBackground.IView) => (
   <ImageBackground
+    testID="AppBackground"
     resizeMode="cover"
     source={hasBg ? bg : splash}
     style={{flex: 1}}
