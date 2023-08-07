@@ -4,14 +4,16 @@ import {ICard} from '~/components/Card/Card.types';
 import S from '~/components/Card/Card.styles';
 
 export const Card = ({type, name, cardNumber, validity}: ICard.IView) => (
-  <S.Container bg="green:light" testID={`Card`} radius="card">
+  <S.Container testID={`Card`}>
     <Div mb={4}>
-      <S.Label>{type}</S.Label>
+      <S.Label testID={`Card:Label`}>{type}</S.Label>
     </Div>
     <Div>
-      <S.Name>{name}</S.Name>
-      <S.CardNumber>{`•••• •••• •••• ${cardNumber?.slice(-4)}`}</S.CardNumber>
-      <S.Validate>{`Validade ${validity}`}</S.Validate>
+      <S.Name testID={`Card:Name`}>{name}</S.Name>
+      <S.CardNumber
+        testID={`Card:CardNumber`}
+      >{`•••• •••• •••• ${cardNumber?.slice(-4)}`}</S.CardNumber>
+      <S.Validate testID={`Card:Validate`}>{`Validade ${validity}`}</S.Validate>
     </Div>
   </S.Container>
 );

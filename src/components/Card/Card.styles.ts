@@ -1,5 +1,10 @@
 import styled from 'styled-components/native';
 import {Div, Text} from '~/components/Atomics';
+import {theme} from '~/styles/theme';
+
+const defaultText = styled(Text)`
+  color: ${theme.colors['grey:dark']};
+`;
 
 export default {
   Container: styled(Div).attrs({
@@ -8,20 +13,16 @@ export default {
     height: 180px;
     justify-content: center;
   `,
-  Label: styled(Text).attrs({
+  Label: styled(defaultText).attrs({
     variant: 'h5:regular',
-    color: 'grey:dark',
   })``,
-  Name: styled(Text).attrs({
+  Name: styled(defaultText).attrs({
     variant: 'p:paragraph',
-    color: 'grey:dark',
   })``,
-  CardNumber: styled(Text).attrs({
+  CardNumber: styled(defaultText).attrs({
     variant: 'p:small',
-    color: 'grey:dark',
   })``,
-  Validate: styled(Text).attrs({
+  Validate: styled(defaultText).attrs({
     variant: 'h5:regular',
-    color: 'grey:dark',
   })``,
 };
