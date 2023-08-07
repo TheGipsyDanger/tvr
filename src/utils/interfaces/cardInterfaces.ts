@@ -1,3 +1,4 @@
+import {ListRenderItemInfo} from 'react-native';
 export interface ICard {
   id: string;
   cardNumber: string;
@@ -5,3 +6,5 @@ export interface ICard {
   name: string;
   validity: string;
 }
+
+export type ICardListItem = ListRenderItemInfo<ICard>;
