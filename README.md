@@ -1,3 +1,6 @@
+# Notion seguindo para o desenvolvimento:
+https://cloudy-degree-f5f.notion.site/Desafio-VR-c84dea3a129e49fcab3d34b1699f9efb
+
 <p align="center" >
   <p align="center" >
     <a href="">
