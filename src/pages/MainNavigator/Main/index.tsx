@@ -1,10 +1,12 @@
 import * as React from 'react';
+import {FlatList} from 'react-native';
 import {AppBackground, Header, HeaderIcon, Card, Div} from '~/components';
 import {IMain} from '~/pages/MainNavigator/Main/Main.types';
 import {useMain} from '~/pages/MainNavigator/Main/Main.model';
 
 export const Main = (props: IMain.IView) => {
-  const {goBack, goToAddCardForm, cards} = useMain(props);
+  const {goBack, goToAddCardForm, cards, renderItem, keyExtractor} =
+    useMain(props);
   return (
     <AppBackground statusBarType="dark-content">
       <Header.Root variant="default">
@@ -19,14 +21,12 @@ export const Main = (props: IMain.IView) => {
         />
       </Header.Root>
       <Div mx={5}>
-        {cards.map(c => (
-          <Card
-            type="Green Card"
-            name={c.name}
-            validity={c.validity}
-            cardNumber={c.cardNumber?.slice(-4)}
-          />
-        ))}
+        <FlatList
+          data={cards}
+          extraData={cards}
+          renderItem={renderItem}
+          keyExtractor={keyExtractor}
+        />
       </Div>
     </AppBackground>
   );
