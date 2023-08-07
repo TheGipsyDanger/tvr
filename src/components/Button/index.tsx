@@ -12,7 +12,7 @@ export const Button = ({
 }: IButton.IView) => (
   <Div onPress={onPress} testID={`Button`}>
     <S.Container {...rest} center height={55} radius={'button'}>
-      <S.Label variant={rest.variant}>
+      <S.Label variant={rest.variant} testID={`Button:Label`}>
         {isLoading ? (
           <ActivityIndicator />
         ) : (
