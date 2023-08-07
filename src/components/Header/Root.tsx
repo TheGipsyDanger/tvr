@@ -9,20 +9,18 @@ export const Root = ({children, variant}: IHeader.IRoot) => {
   const {top} = useHeader();
   const [first, second, third] = Children.toArray(children);
 
-  return [
-    <Div
-      key="compensation"
-      height={top}
-      bg={variant === 'clean' ? 'transparent' : 'grey:light'}
-    />,
-    <S.Container testID="Header:Root" variant={variant} key="component">
-      <Div flex={1}>{first}</Div>
-      <Div flex={1} center>
-        {second}
-      </Div>
-      <Div flex={1} alignItems="flex-end">
-        {third}
-      </Div>
-    </S.Container>,
-  ];
+  return (
+    <Div>
+      <S.Compensation height={top} isClean={variant === 'clean'} />
+      <S.Container testID="Header:Root" variant={variant} key="component">
+        <Div flex={1}>{first}</Div>
+        <Div flex={1} center>
+          {second}
+        </Div>
+        <Div flex={1} alignItems="flex-end">
+          {third}
+        </Div>
+      </S.Container>
+    </Div>
+  );
 };

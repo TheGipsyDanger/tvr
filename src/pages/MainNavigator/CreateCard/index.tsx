@@ -14,6 +14,7 @@ import {useCreateCard} from '~/pages/MainNavigator/CreateCard/CreateCard.model';
 export const CreateCard = () => {
   const {goBack, control, handleSubmit, errors, onSubmit, trigger, isValid} =
     useCreateCard();
+
   return (
     <AppBackground>
       <Header.Root variant="clean">
@@ -23,7 +24,7 @@ export const CreateCard = () => {
         />
         <Header.Content variant="clean" text="cadastro" />
       </Header.Root>
-      <Screen bg="transparent" pb={9}>
+      <Screen testID="CreateCard" bg="transparent" pb={9}>
         <Div flex={1} justifyContent="center" pb={9}>
           <Title />
           <Div mx={3}>

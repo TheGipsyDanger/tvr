@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {Div, Text} from '~/components/Atomics';
+import {theme} from '~/styles/theme';
 
 export default {
   Label: styled(Text).attrs({
@@ -10,9 +11,10 @@ export default {
     height: 55,
     px: 3,
     justifyContent: 'center',
-    bg: 'white',
-    radius: 'input',
-    boxShadow: 'input',
     borderWidth: 1,
-  })``,
+  })`
+    box-shadow: ${theme.shadows.input};
+    border-radius: ${theme.raddi.input}px;
+    background-color: ${theme.colors.white};
+  `,
 };

@@ -23,7 +23,7 @@ export const CreateCardFinish = (props: ICreateCardFinish.IView) => {
         />
         <Header.Content variant="clean" text="cadastro" />
       </Header.Root>
-      <Screen flex={1} pb={9} justifyContent="center">
+      <Screen testID="CreateCardFinish" flex={1} pb={9} justifyContent="center">
         <Div mx={5} pb={9}>
           <Title hasSublabel={true} />
           <Card

@@ -3,14 +3,14 @@ import {useCallback} from 'react';
 import {Card} from '~/components';
 import {IMain} from '~/pages/MainNavigator/Main/Main.types';
 import {AppRoutes} from '~/routes/routeConfig';
-import {goBack} from '~/utils/navigator';
+import {goBack, navigate} from '~/utils/navigator';
 import {useAppSelector, ICardListItem, ICard} from '~/utils';
 
-export const useMain = ({navigation}: IMain.IModelProps): IMain.IModel => {
+export const useMain = (props: IMain.IModelProps): IMain.IModel => {
   const cards = useAppSelector(state => state.Cards.cards);
 
   const goToAddCardForm = () => {
-    navigation.navigate(AppRoutes.CreateCard);
+    navigate(AppRoutes.CreateCard);
   };
 
   const renderItem = useCallback(

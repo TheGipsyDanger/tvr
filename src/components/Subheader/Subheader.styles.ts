@@ -8,7 +8,7 @@ export default {
     center: true,
     height: 60,
   })`
-    background-color: ${theme.colors['green:light']};
+    background-color: ${theme.colors['grey:light']};
     border-bottom-left-radius: ${RFValue(25)}px;
     border-bottom-right-radius: ${RFValue(25)}px;
     box-shadow: ${theme.shadows.card};

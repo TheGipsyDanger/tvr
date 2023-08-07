@@ -1,5 +1,6 @@
+import '~/translate/i18n';
 import * as React from 'react';
-import {CreateCard} from './';
+import {CreateCard} from './index';
 import {render} from '@testing-library/react-native';
 
 describe('Render CreateCard', () => {

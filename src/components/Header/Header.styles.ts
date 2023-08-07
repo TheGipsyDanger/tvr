@@ -13,14 +13,18 @@ const DivDefault = styled(Div).attrs({
 `;
 
 export default {
+  Compensation: styled(Div)<{isClean: boolean}>`
+    background-color: ${({isClean}) =>
+      !isClean ? theme.colors['grey:light'] : theme.colors.transparent};
+  `,
   Container: styled(DivDefault)(
     variant({
       variants: {
         default: {
-          backgroundColor: 'grey:light',
+          backgroundColor: theme.colors['grey:light'],
         },
         clean: {
-          backgroundColor: 'transparent',
+          backgroundColor: theme.colors['transparent'],
         },
       },
     })

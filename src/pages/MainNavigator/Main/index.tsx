@@ -21,7 +21,7 @@ export const Main = (props: IMain.IView) => {
         />
       </Header.Root>
       <Subheader />
-      <Div mx={5} flex={1}>
+      <Div testID="Main" mx={5} flex={1}>
         <FlatList
           data={cards}
           extraData={cards}

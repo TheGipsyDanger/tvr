@@ -1,13 +1,11 @@
 import {useEffect} from 'react';
-import {useAppDispatch, useAppSelector} from '~/utils';
+import {useAppDispatch, useAppSelector, navigate} from '~/utils';
 import {getCardsActions} from '~/redux/actions';
 import {IInitial} from '~/pages/MainNavigator/Initial/Initial.types';
 import {AppRoutes} from '~/routes/routeConfig';
 
-export const useInitial = ({
-  navigation,
-}: IInitial.IModelProps): IInitial.IModel => {
-  const {cards, isLoading} = useAppSelector(state => state.Cards);
+export const useInitial = (props: IInitial.IModelProps): IInitial.IModel => {
+  const {isLoading} = useAppSelector(state => state.Cards);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -15,15 +13,14 @@ export const useInitial = ({
   }, []);
 
   const goToMyCards = () => {
-    navigation.navigate(AppRoutes.Main);
+    navigate(AppRoutes.Main);
   };
 
   const goToAddCardForm = () => {
-    navigation.navigate(AppRoutes.CreateCard);
+    navigate(AppRoutes.CreateCard);
   };
 
   return {
-    cards,
     isLoading,
     goToMyCards,
     goToAddCardForm,
