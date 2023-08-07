@@ -5,6 +5,7 @@ export enum AppRoutes {
   CreateCard = 'CreateCard',
   Initial = 'MainNavigator',
   CreateCardFinish = 'CreateCardFinish',
+  SelectedCard = 'SelectedCard',
 }
 
 export type RootParamList = {
@@ -12,6 +13,7 @@ export type RootParamList = {
   [AppRoutes.CreateCard]: undefined;
   [AppRoutes.Initial]: undefined;
   [AppRoutes.CreateCardFinish]: undefined;
+  [AppRoutes.SelectedCard]: undefined;
 };
 
 export const AppRouteNames = Object.keys(

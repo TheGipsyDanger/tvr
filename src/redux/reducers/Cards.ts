@@ -44,6 +44,9 @@ const Cards = createSlice({
     createCardRequestFailure: (_, {payload}) => {
       return {...initialState, error: payload};
     },
+    selectedCard: (state, {payload}) => {
+      return {...state, card: payload};
+    },
   },
 });
 

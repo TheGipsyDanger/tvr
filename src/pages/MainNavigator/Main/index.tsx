@@ -3,6 +3,7 @@ import {FlatList} from 'react-native';
 import {AppBackground, Header, HeaderIcon, Subheader, Div} from '~/components';
 import {IMain} from '~/pages/MainNavigator/Main/Main.types';
 import {useMain} from '~/pages/MainNavigator/Main/Main.model';
+import {theme} from '~/styles/theme';
 
 export const Main = (props: IMain.IView) => {
   const {goBack, goToAddCardForm, cards, renderItem, keyExtractor} =
@@ -23,6 +24,11 @@ export const Main = (props: IMain.IView) => {
       <Subheader />
       <Div testID="Main" mx={5} flex={1}>
         <FlatList
+          contentContainerStyle={{
+            flex: 1,
+            justifyContent: 'center',
+            paddingBottom: theme.space[9],
+          }}
           data={cards}
           extraData={cards}
           renderItem={renderItem}

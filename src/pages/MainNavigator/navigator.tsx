@@ -3,6 +3,7 @@ import {Initial} from './Initial';
 import {CreateCard} from './CreateCard';
 import {Test} from './Test';
 import { CreateCardFinish } from './CreateCardFinish';
+import { SelectedCard } from './SelectedCard';
 // import views here
 
 const views: {[key: string]: any} = {
@@ -11,6 +12,7 @@ const views: {[key: string]: any} = {
   CreateCard,
   Test,
   CreateCardFinish,
+SelectedCard,
 // add viewsName here
 };
 

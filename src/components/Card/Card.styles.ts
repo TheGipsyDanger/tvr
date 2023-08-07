@@ -12,6 +12,8 @@ export default {
   })`
     height: 180px;
     justify-content: center;
+    border-radius: ${theme.raddi.card}px;
+    background-color: ${theme.colors['green:light']};
   `,
   Label: styled(defaultText).attrs({
     variant: 'h5:regular',
