@@ -1,6 +1,5 @@
 import '~/translate/i18n';
 import * as React from 'react';
-import {Trans} from 'react-i18next';
 import {Button} from '~/components/Button';
 import {IButton} from '~/components/Button/Button.types';
 import {render, fireEvent} from '@testing-library/react-native';

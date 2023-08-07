@@ -15,7 +15,7 @@ export const Root = ({children, variant}: IHeader.IRoot) => {
       height={top}
       bg={variant === 'clean' ? 'transparent' : 'grey:light'}
     />,
-    <S.Container variant={variant} key="component">
+    <S.Container testID="Header:Root" variant={variant} key="component">
       <Div flex={1}>{first}</Div>
       <Div flex={1} center>
         {second}

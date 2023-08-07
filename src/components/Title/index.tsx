@@ -5,11 +5,11 @@ import {ITitle} from '~/components/Title/Title.types';
 
 export const Title = ({hasSublabel = false}: ITitle.IView) => (
   <Div testID={`Title`} center mb={5}>
-    <Text testID={`Title:title`} variant="h1:regularCaption" color="white">
+    <Text testID={`Title:Title`} variant="h1:regularCaption" color="white">
       <Trans i18nKey={`components.Title.title`} />
     </Text>
     {hasSublabel && (
-      <Text variant="h4:regular" color="white" testID={`Title:subtitle`}>
+      <Text variant="h4:regular" color="white" testID={`Title:Sublabel`}>
         <Trans i18nKey={`components.Title.subtitle`} />
       </Text>
     )}

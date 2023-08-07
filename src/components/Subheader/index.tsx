@@ -5,7 +5,7 @@ import S from '~/components/Subheader/Subheader.styles';
 
 export const Subheader = (props: ISubheader.IView) => (
   <S.Container testID={`Subheader`}>
-    <S.Label>
+    <S.Label testID={`Subheader:Label`}>
       <Trans i18nKey={`components.Header.MyCards`} />
     </S.Label>
   </S.Container>
