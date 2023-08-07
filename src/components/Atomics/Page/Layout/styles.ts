@@ -1,9 +1,9 @@
 import styled from 'styled-components/native';
 import {KeyboardAvoidingView} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {Wrapped} from '~/components/Atomics/Wrapped';
 import {color, BackgroundColorProps, backgroundColor} from 'styled-system';
 
-export const SafeAreaStyled = styled(SafeAreaView)<BackgroundColorProps>`
+export const SafeAreaStyled = styled(Wrapped)<BackgroundColorProps>`
   ${color};
   ${backgroundColor};
   flex: 1;

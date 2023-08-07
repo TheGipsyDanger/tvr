@@ -25,7 +25,7 @@ function* createCard({payload}: ReturnType<typeof createCardActions.request>) {
 
     if (resp.status === 'Success') {
       yield put(createCardActions.success(resp.data));
-      navigate(AppRoutes.Main);
+      navigate(AppRoutes.CreateCardFinish);
     } else {
       yield put(createCardActions.failure(`${resp?.message}`));
     }

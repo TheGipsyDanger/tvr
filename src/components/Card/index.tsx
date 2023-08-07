@@ -10,7 +10,7 @@ export const Card = ({type, name, cardNumber, validity}: ICard.IView) => (
     </Div>
     <Div>
       <S.Name>{name}</S.Name>
-      <S.CardNumber>{`•••• •••• •••• ${cardNumber}`}</S.CardNumber>
+      <S.CardNumber>{`•••• •••• •••• ${cardNumber?.slice(-4)}`}</S.CardNumber>
       <S.Validate>{`Validade ${validity}`}</S.Validate>
     </Div>
   </S.Container>
